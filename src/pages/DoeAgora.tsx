@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Heart, CreditCard, QrCode, FileText, Copy, CheckCircle } from "lucide-react";
+import { Heart, CreditCard, QrCode, Copy, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const DoeAgora = () => {
@@ -12,7 +12,7 @@ const DoeAgora = () => {
   const { toast } = useToast();
 
   const suggestedAmounts = [50, 100, 180, 360, 1000];
-  const pixKey = "exemplo@kerenchai.org"; // Placeholder
+  const pixKey = "projetokerenchai@gmail.com";
 
   const handleAmountSelect = (amount: number) => {
     setSelectedAmount(amount);
@@ -44,13 +44,6 @@ const DoeAgora = () => {
     });
   };
 
-  const handleBoletoPayment = () => {
-    // Placeholder para geração de boleto
-    toast({
-      title: "Gerando boleto...",
-      description: "Seu boleto será gerado em instantes.",
-    });
-  };
 
   return (
     <Layout>
@@ -135,7 +128,7 @@ const DoeAgora = () => {
             </div>
 
             {/* Payment Options */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* PIX */}
               <div className="text-center">
                 <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -182,26 +175,6 @@ const DoeAgora = () => {
                   disabled={getCurrentAmount() === 0}
                 >
                   Doar com cartão
-                </Button>
-              </div>
-
-              {/* Boleto */}
-              <div className="text-center">
-                <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <FileText className="text-primary-foreground" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Boleto Bancário</h3>
-                <p className="text-muted-foreground mb-6">
-                  Pagamento via boleto bancário (aprovação em até 3 dias úteis)
-                </p>
-                <Button 
-                  onClick={handleBoletoPayment}
-                  variant="warm" 
-                  size="lg" 
-                  className="w-full"
-                  disabled={getCurrentAmount() === 0}
-                >
-                  Gerar boleto
                 </Button>
               </div>
             </div>
