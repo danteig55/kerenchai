@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Heart, CreditCard, QrCode, Copy, CheckCircle } from "lucide-react";
+import { Heart, CreditCard, QrCode, Copy, CheckCircle, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const DoeAgora = () => {
@@ -221,6 +221,37 @@ const DoeAgora = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </div>
+      </section>
+
+      {/* WhatsApp Contact */}
+      <section className="py-16 bg-accent/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-card rounded-2xl p-8 subtle-shadow">
+            <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <MessageCircle className="text-white" size={32} />
+            </div>
+            <h2 className="text-2xl font-bold text-foreground mb-4">Precisa de ajuda?</h2>
+            <p className="text-muted-foreground mb-6">
+              Fale diretamente conosco pelo WhatsApp para esclarecer dúvidas sobre doações ou o projeto.
+            </p>
+            <Button 
+              asChild
+              variant="default"
+              size="lg"
+              className="bg-green-500 hover:bg-green-600 text-white border-0"
+            >
+              <a 
+                href="https://wa.me/5511992540709" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                <MessageCircle size={20} />
+                Falar no WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
