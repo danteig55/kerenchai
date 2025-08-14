@@ -152,9 +152,6 @@ const SobreProjeto = () => {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
-                  Auditoria periódica
-                </span>
-                <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
                   Relatórios de impacto
                 </span>
                 <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
