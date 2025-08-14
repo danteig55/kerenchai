@@ -1,37 +1,28 @@
 import Layout from "@/components/Layout";
 import { CheckCircle, Users, Search, Shield, FileCheck, Gift } from "lucide-react";
-
 const SobreProjeto = () => {
-  const steps = [
-    {
-      icon: Users,
-      title: "Indicação",
-      description: "Rabbinos, estabelecimentos ou comunidade indicam famílias que precisam de apoio"
-    },
-    {
-      icon: FileCheck,
-      title: "Solicitação",
-      description: "A família realiza o cadastro através de nosso processo simplificado"
-    },
-    {
-      icon: Search,
-      title: "Avaliação",
-      description: "Nossa equipe analisa criteriosamente cada solicitação recebida"
-    },
-    {
-      icon: Shield,
-      title: "Validação",
-      description: "Verificamos se os critérios estabelecidos são atendidos"
-    },
-    {
-      icon: Gift,
-      title: "Concessão",
-      description: "Liberamos os benefícios via parceiros, cartão e ações sazonais"
-    }
-  ];
-
-  return (
-    <Layout>
+  const steps = [{
+    icon: Users,
+    title: "Indicação",
+    description: "Rabbinos, estabelecimentos ou comunidade indicam famílias que precisam de apoio"
+  }, {
+    icon: FileCheck,
+    title: "Solicitação",
+    description: "A família realiza o cadastro através de nosso processo simplificado"
+  }, {
+    icon: Search,
+    title: "Avaliação",
+    description: "Nossa equipe analisa criteriosamente cada solicitação recebida"
+  }, {
+    icon: Shield,
+    title: "Validação",
+    description: "Verificamos se os critérios estabelecidos são atendidos"
+  }, {
+    icon: Gift,
+    title: "Concessão",
+    description: "Liberamos os benefícios via parceiros, cartão e ações sazonais"
+  }];
+  return <Layout>
       {/* Hero Section */}
       <section className="py-16 bg-secondary/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -119,9 +110,8 @@ const SobreProjeto = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {steps.map((step, index) => {
-              const IconComponent = step.icon;
-              return (
-                <div key={index} className="text-center">
+            const IconComponent = step.icon;
+            return <div key={index} className="text-center">
                   <div className="relative mb-6">
                     <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4 warm-shadow">
                       <IconComponent className="text-primary-foreground" size={32} />
@@ -132,9 +122,8 @@ const SobreProjeto = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">{step.title}</h3>
                   <p className="text-sm text-muted-foreground">{step.description}</p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
       </section>
@@ -145,11 +134,7 @@ const SobreProjeto = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-foreground mb-8">Transparência</h2>
             <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Trabalhamos com controle e validação de critérios, registro das entregas e revisão 
-                periódica das parcerias. Mantemos comunicação ativa com doadores e parceiros, 
-                garantindo que cada contribuição seja utilizada de forma responsável e transparente.
-              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">Trabalhamos com controle, validação de critérios e revisão periódica das parcerias. Mantemos comunicação ativa com doadores e parceiros, garantindo que cada contribuição seja utilizada de forma responsável e transparente.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
                   Relatórios de impacto
@@ -162,8 +147,6 @@ const SobreProjeto = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default SobreProjeto;
