@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-family-shabbat.jpg";
-
 const Index = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 hero-gradient opacity-5"></div>
@@ -19,11 +17,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground mb-6">
                 Apoio a famílias que mantêm a chama do judaísmo acesa — mesmo diante do alto custo de vida.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-                O Keren Chai ajuda famílias judaicas que estudam, trabalham e constroem nossa 
-                comunidade a viver com dignidade: alimentação kasher, itens para as festas, 
-                saúde, educação e mais.
-              </p>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">O Keren Chai ajuda famílias judaicas que estudam, trabalham e constroem nossa comunidade a viver com dignidade: alimentação kasher, itens para os chaguim, saúde, educação e mais.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/doe-agora">
                   <Button variant="donate" size="lg" className="w-full sm:w-auto">
@@ -40,11 +34,7 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-slide-up lg:order-first">
-              <img 
-                src={heroImage} 
-                alt="Família judaica reunida ao redor da mesa de Shabat com velas acesas, chalá e vinho, representando tradição, união e dignidade familiar"
-                className="rounded-2xl subtle-shadow w-full h-auto"
-              />
+              <img src={heroImage} alt="Família judaica reunida ao redor da mesa de Shabat com velas acesas, chalá e vinho, representando tradição, união e dignidade familiar" className="rounded-2xl subtle-shadow w-full h-auto" />
             </div>
           </div>
         </div>
@@ -61,14 +51,18 @@ const Index = () => {
               <h3 className="text-3xl font-bold text-foreground mb-2">250+</h3>
               <p className="text-muted-foreground">Famílias apoiadas</p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.1s"
+          }}>
               <div className="w-16 h-16 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="text-foreground" size={32} />
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
               <p className="text-muted-foreground">Parceiros kasher</p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.2s"
+          }}>
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Heart className="text-primary-foreground" size={32} />
               </div>
@@ -128,8 +122,6 @@ const Index = () => {
           </Link>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Index;
