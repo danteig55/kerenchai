@@ -183,7 +183,7 @@ const SobreProjeto = () => {
             </p>
             <div className="bg-card rounded-2xl p-6 subtle-shadow inline-block">
               <p className="text-lg font-semibold text-accent">
-                Transparência, dignidade e foco em quem sustenta o mundo com o estudo da Torá
+                Transparência, dignidade e foco em quem precisa da nossa ajuda.
               </p>
             </div>
           </div>
