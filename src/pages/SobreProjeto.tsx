@@ -26,7 +26,7 @@ const SobreProjeto = () => {
   }];
   const benefits = [{
     icon: CreditCard,
-    title: "Cartão de desconto kasher",
+    title: "Descontos em estabelecimentos Kasher",
     description: "Descontos em carnes, pães, laticínios e itens essenciais em 10+ parceiros kasher selecionados."
   }, {
     icon: Percent,
