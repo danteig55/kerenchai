@@ -6,7 +6,7 @@ const SobreProjeto = () => {
   const steps = [{
     icon: Users,
     title: "Indicação",
-    description: "Rabbinos, estabelecimentos ou comunidade indicam famílias que precisam de apoio"
+    description: "Rabinos, estabelecimentos ou comunidade indicam famílias que precisam de apoio"
   }, {
     icon: FileCheck,
     title: "Solicitação",
