@@ -48,7 +48,7 @@ const SobreProjeto = () => {
   }, {
     icon: Shield,
     number: "10+",
-    label: "Parceiros kasher"
+    label: "Parceiros"
   }, {
     icon: Heart,
     number: "365",
