@@ -17,7 +17,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground mb-6">
                 Apoio a famílias que mantêm a chama do judaísmo acesa — mesmo diante do alto custo de vida.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">O Keren Chai ajuda famílias judaicas que estudam, trabalham e constroem nossa comunidade a viver com dignidade: alimentação kasher, itens para os chaguim, saúde, educação e mais.</p>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">O Keren Chai ajuda famílias judaicas que estudam, trabalham e constroem nossa comunidade a viver com dignidade: alimentação kasher, itens para os chaguim, saúde, bem estar e mais.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/doe-agora">
                   <Button variant="donate" size="lg" className="w-full sm:w-auto">
