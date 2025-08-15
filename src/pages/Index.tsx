@@ -48,7 +48,7 @@ const Index = () => {
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Users className="text-primary-foreground" size={32} />
               </div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">Parceiros</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-2">250</h3>
               <p className="text-muted-foreground">Famílias apoiadas</p>
             </div>
             <div className="text-center animate-fade-in" style={{
@@ -97,9 +97,7 @@ const Index = () => {
             </div>
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
               <h3 className="text-xl font-semibold text-foreground mb-4">Comunidade</h3>
-              <p className="text-muted-foreground">
-                Fortalecemos os laços que nos unem, cuidando de quem sustenta o mundo com a Torá
-              </p>
+              <p className="text-muted-foreground">Fortalecemos os laços que nos unem, cuidando de quem merece.</p>
             </div>
           </div>
         </div>
