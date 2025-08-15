@@ -58,7 +58,7 @@ const Index = () => {
                 <Shield className="text-foreground" size={32} />
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
-              <p className="text-muted-foreground">Parceiros kasher</p>
+              <p className="text-muted-foreground">Parceiros </p>
             </div>
             <div className="text-center animate-fade-in" style={{
             animationDelay: "0.2s"
