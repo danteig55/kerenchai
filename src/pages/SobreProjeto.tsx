@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Search, Shield, FileCheck, Gift, CreditCard, Percent, Calendar, Heart } from "lucide-react";
+
 const SobreProjeto = () => {
   const steps = [{
     icon: Users,
@@ -24,6 +25,7 @@ const SobreProjeto = () => {
     title: "Concessão",
     description: "Liberamos os benefícios via parceiros, cartão e ações sazonais"
   }];
+
   const benefits = [{
     icon: CreditCard,
     title: "Cartão de desconto kasher",
@@ -41,6 +43,7 @@ const SobreProjeto = () => {
     title: "Refeições de Shabat",
     description: "Sorteios e ações pontuais com refeições completas entregues em casa."
   }];
+
   const stats = [{
     icon: Users,
     number: "250+",
@@ -54,6 +57,7 @@ const SobreProjeto = () => {
     number: "365",
     label: "Dias de apoio"
   }];
+
   return <Layout>
       {/* Hero Section */}
       <section className="py-20 bg-secondary/20">
@@ -96,7 +100,10 @@ const SobreProjeto = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">Quem apoiamos</h3>
-              <p className="text-lg text-muted-foreground mb-6">Famílias — inclusive Avrechim e Baalê Batim — que conciliam estudo, trabalho e vida familiar, mantendo prática judaica e valores éticos.</p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Famílias — entre Avrechim e Baalê Batim — que conciliam estudo, trabalho e vida familiar, 
+                mantendo prática judaica e valores éticos.
+              </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-accent mt-1" size={20} />
@@ -116,7 +123,18 @@ const SobreProjeto = () => {
                 </div>
               </div>
             </div>
-            
+            <div className="bg-card rounded-2xl p-8 subtle-shadow">
+              <div className="text-center">
+                <div className="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-6xl font-bold text-foreground mb-2">250+</h3>
+                <p className="text-xl text-muted-foreground mb-4">Famílias apoiadas</p>
+                <p className="text-sm text-muted-foreground">
+                  Entre Avrechim e Baalê Batim que mantêm a chama do judaísmo acesa
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -143,7 +161,7 @@ const SobreProjeto = () => {
                   <h3 className="text-5xl font-bold text-primary-foreground mb-2">{stat.number}</h3>
                   <p className="text-xl text-primary-foreground">{stat.label}</p>
                 </div>;
-          })}
+            })}
           </div>
 
           <div className="text-center">
@@ -168,7 +186,7 @@ const SobreProjeto = () => {
                   <h3 className="text-lg font-semibold text-primary-foreground mb-3">{step.title}</h3>
                   <p className="text-sm text-primary-foreground/70">{step.description}</p>
                 </div>;
-          })}
+            })}
           </div>
         </div>
       </section>
@@ -202,7 +220,7 @@ const SobreProjeto = () => {
                     </div>
                   </div>
                 </div>;
-          })}
+            })}
           </div>
 
           <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow text-center">
@@ -227,6 +245,6 @@ const SobreProjeto = () => {
           </div>
         </div>
       </section>
-    </Layout>;
+    </Layout>
 };
 export default SobreProjeto;
