@@ -86,9 +86,11 @@ const SobreProjeto = () => {
             <h2 className="text-3xl font-bold text-foreground mb-8">O que é o Keren Chai</h2>
             <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                O Keren Chai existe para <strong className="text-foreground">dar força a quem se esforça</strong>. 
-                Apoiamos famílias judaicas que enfrentam pressões financeiras, mas não abrem mão de viver o judaísmo 
-                no dia a dia. Oferecemos ajuda prática e respeitosa, priorizando dignidade, autonomia e pertencimento comunitário.
+                O Keren Chai existe para <strong className="text-foreground">dar força a quem se esforça para viver com dignidade judaica</strong>. 
+                Apoiamos famílias judaicas que enfrentam pressões financeiras oferecendo descontos em alimentação kasher e 
+                diversos benefícios que garantem acesso a necessidades do dia a dia com valores acessíveis. Nossa missão vai além 
+                do apoio financeiro: promovemos dignidade, autonomia e fortalecem o pertencimento comunitário, permitindo que 
+                famílias mantenham suas tradições sem comprometer suas necessidades básicas.
               </p>
             </div>
           </div>
