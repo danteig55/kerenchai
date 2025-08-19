@@ -70,9 +70,9 @@ const SobreProjeto = () => {
                 Doe Agora
               </Button>
             </Link>
-            <Link to="/contato">
+            <Link to="/sobre-o-projeto">
               <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                Fale Conosco
+                Saber Mais
               </Button>
             </Link>
           </div>
@@ -220,7 +220,7 @@ const SobreProjeto = () => {
                   Fazer Doação
                 </Button>
               </Link>
-              <Link to="/contato">
+              <Link to="/sobre-o-projeto">
                 <Button size="lg" variant="outline" className="text-lg px-8 py-4">
                   Saber Mais
                 </Button>

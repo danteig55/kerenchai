@@ -20,20 +20,11 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-4">
               <a 
-                href="mailto:contato@kerenchai.org" 
+                href="mailto:projetokerenchai@gmail.com" 
                 className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
               >
                 <Mail size={16} />
-                <span className="text-sm">contato@kerenchai.org</span>
-              </a>
-              <a 
-                href="https://wa.me/5511999999999" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-              >
-                <MessageCircle size={16} />
-                <span className="text-sm">WhatsApp</span>
+                <span className="text-sm">projetokerenchai@gmail.com</span>
               </a>
             </div>
           </div>
@@ -53,18 +44,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/beneficios" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
-                  Benefícios
-                </Link>
-              </li>
-              <li>
                 <Link to="/depoimentos" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Depoimentos
-                </Link>
-              </li>
-              <li>
-                <Link to="/contato" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
-                  Contato
                 </Link>
               </li>
             </ul>

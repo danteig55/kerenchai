@@ -201,15 +201,6 @@ const DoeAgora = () => {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="receipt" className="bg-card rounded-lg px-6">
-              <AccordionTrigger className="text-left">
-                Posso receber recibo?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Sim, enviamos por e-mail após a confirmação do pagamento. O recibo contém 
-                todas as informações necessárias para seus registros pessoais.
-              </AccordionContent>
-            </AccordionItem>
 
             <AccordionItem value="recurring" className="bg-card rounded-lg px-6">
               <AccordionTrigger className="text-left">
