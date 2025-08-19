@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Quote, Heart } from "lucide-react";
 
 const Depoimentos = () => {
@@ -94,16 +96,16 @@ const Depoimentos = () => {
             Sua contribuição pode ser o próximo testemunho de gratidão que receberemos
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/doe-agora" className="inline-block">
-              <button className="bg-accent text-accent-foreground hover:scale-105 transition-smooth px-8 py-3 rounded-lg font-semibold warm-shadow">
+            <Button asChild variant="donate" className="px-8 py-3 rounded-lg font-semibold warm-shadow">
+              <Link to="/doe-agora">
                 Fazer uma doação
-              </button>
-            </a>
-            <a href="/sobre-o-projeto" className="inline-block">
-              <button className="border border-border text-foreground hover:bg-accent hover:text-accent-foreground transition-smooth px-8 py-3 rounded-lg font-semibold">
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="px-8 py-3 rounded-lg font-semibold">
+              <Link to="/sobre-o-projeto">
                 Conhecer mais o projeto
-              </button>
-            </a>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

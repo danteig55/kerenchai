@@ -65,16 +65,16 @@ const SobreProjeto = () => {
             Apoio prático e dignificante para quem se esforça para manter a tradição judaica viva
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/doe-agora">
-              <Button size="lg" variant="donate" className="text-lg px-8 py-4">
+            <Button asChild size="lg" variant="donate" className="text-lg px-8 py-4">
+              <Link to="/doe-agora">
                 Doe Agora
-              </Button>
-            </Link>
-            <Link to="/sobre-o-projeto">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4">
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
+              <Link to="/sobre-o-projeto">
                 Saber Mais
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -215,16 +215,16 @@ const SobreProjeto = () => {
               utilizada de forma responsável e transparente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/doe-agora">
-                <Button size="lg" variant="donate" className="text-lg px-8 py-4">
+              <Button asChild size="lg" variant="donate" className="text-lg px-8 py-4">
+                <Link to="/doe-agora">
                   Fazer Doação
-                </Button>
-              </Link>
-              <Link to="/sobre-o-projeto">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-4">
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
+                <Link to="/sobre-o-projeto">
                   Saber Mais
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

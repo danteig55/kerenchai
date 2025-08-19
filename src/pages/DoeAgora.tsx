@@ -70,17 +70,15 @@ const DoeAgora = () => {
               
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
                 {suggestedAmounts.map((amount) => (
-                  <button
+                  <Button
                     key={amount}
                     onClick={() => handleAmountSelect(amount)}
-                    className={`p-4 rounded-lg border-2 transition-smooth ${
-                      selectedAmount === amount
-                        ? "border-accent bg-accent/10 text-accent"
-                        : "border-border hover:border-accent/50"
-                    }`}
+                    variant={selectedAmount === amount ? "donate" : "outline"}
+                    size="lg"
+                    className="p-4 h-auto flex-col"
                   >
                     <div className="text-lg font-semibold">R$ {amount}</div>
-                  </button>
+                  </Button>
                 ))}
               </div>
 
@@ -148,12 +146,14 @@ const DoeAgora = () => {
                   <p className="text-sm text-muted-foreground mb-2">Chave PIX:</p>
                   <div className="flex items-center justify-between bg-background rounded p-2">
                     <span className="text-sm font-mono text-foreground truncate">{pixKey}</span>
-                    <button
+                    <Button
                       onClick={copyPixKey}
-                      className="ml-2 p-1 hover:bg-accent/20 rounded transition-smooth"
+                      variant="ghost"
+                      size="icon"
+                      className="ml-2"
                     >
                       <Copy size={16} className="text-accent" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
