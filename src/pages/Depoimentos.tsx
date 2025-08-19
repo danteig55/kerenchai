@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Quote, Play, Heart } from "lucide-react";
+import { Quote, Heart } from "lucide-react";
 
 const Depoimentos = () => {
   const testimonials = [
@@ -25,28 +25,6 @@ const Depoimentos = () => {
     }
   ];
 
-  const videoTestimonials = [
-    {
-      title: "Rabino Chaim explica o projeto",
-      description: "Entenda a importância do Keren Chai na comunidade",
-      thumbnail: "https://img.youtube.com/vi/placeholder1/maxresdefault.jpg"
-    },
-    {
-      title: "Depoimento da Família Cohen",
-      description: "Como o projeto transformou nossa vida",
-      thumbnail: "https://img.youtube.com/vi/placeholder2/maxresdefault.jpg"
-    },
-    {
-      title: "Rabino David endossa o projeto",
-      description: "A importância do apoio comunitário",
-      thumbnail: "https://img.youtube.com/vi/placeholder3/maxresdefault.jpg"
-    },
-    {
-      title: "Família Levy compartilha gratidão",
-      description: "Testemunho de apoio recebido",
-      thumbnail: "https://img.youtube.com/vi/placeholder4/maxresdefault.jpg"
-    }
-  ];
 
   return (
     <Layout>
@@ -87,52 +65,6 @@ const Depoimentos = () => {
         </div>
       </section>
 
-      {/* Video Testimonials */}
-      <section className="py-20 bg-secondary/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-              Depoimentos em vídeo
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Assista aos testemunhos de rabinos e famílias que fazem parte desta corrente de apoio
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {videoTestimonials.map((video, index) => (
-              <div key={index} className="bg-card rounded-2xl overflow-hidden subtle-shadow hover:warm-shadow transition-smooth group cursor-pointer">
-                <div className="relative aspect-video bg-muted">
-                  <div className="absolute inset-0 flex items-center justify-center bg-primary/80 group-hover:bg-primary/90 transition-smooth">
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <Play className="text-white ml-1" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                    <p className="text-white text-sm font-medium">Clique para assistir</p>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-foreground mb-2">{video.title}</h3>
-                  <p className="text-sm text-muted-foreground">{video.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground mb-4">
-              Em breve, mais depoimentos e vídeos explicativos sobre nosso trabalho
-            </p>
-            <div className="bg-card rounded-xl p-6 inline-block subtle-shadow">
-              <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Nota:</strong> Os vídeos serão incorporados 
-                quando estiverem disponíveis no YouTube ou Vimeo
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Impact Quote */}
       <section className="py-20 hero-gradient">
