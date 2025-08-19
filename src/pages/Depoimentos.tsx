@@ -5,23 +5,23 @@ const Depoimentos = () => {
   const testimonials = [
     {
       name: "Família Posva",
-      content: "Agradecemos imensamente pelo trabalho do Keren Chai. Os descontos em produtos kasher viabilizam nossa alimentação. Recebemos refeição de Shabat em casa e um vale para um forno de leite. Obrigado!",
-      highlight: "Produtos kasher e vale para forno"
+      content: "Agradecemos imensamente pelo maravilhoso trabalho no projeto. Seu apoio é essencial para nossa família, oferecendo descontos em produtos kosher e possibilitando uma alimentação que, sem sua ajuda, não seria viável. Além dos descontos, fomos contemplados com uma deliciosa refeição de Shabat entregue em casa e um vale compras para um forno de leite. Obrigado e parabéns!",
+      highlight: "Descontos kosher e refeições de Shabat"
     },
     {
       name: "Maysa Vainer",
-      content: "Durante a pandemia, recebemos o Emet, essencial naqueles tempos. Depois vieram dentista, sapatos e presentes de festas. O Keren Chai nos faz sentir o verdadeiro Ahavat Israel.",
-      highlight: "Apoio completo durante a pandemia"
+      content: "O Keren Chai tem sido uma grande ajuda em momentos difíceis. Durante a pandemia, recebemos o Emet, o que foi crucial naqueles tempos. BH o projeto seguiu com muitas brachot. Desde então, o projeto continuou a nos apoiar com dentista, sapatos e presentes durante as festas, além de muitas outras pequenas ajudas. Sou muito grata a todos que fazem parte do projeto. O Keren Chai também me faz sentir o verdadeiro Ahavat Israel.",
+      highlight: "Apoio completo e Ahavat Israel"
     },
     {
       name: "Daniele Cordoba / Moriah Lyor",
-      content: "A cada mês, o cartão ajuda a manter aluguel, escola e contas em dia. Os descontos — inclusive em parceiros como lojas de sapatos infantis — são essenciais para nossa família.",
-      highlight: "Cartão de desconto mensal"
+      content: "Há anos, minha família e eu somos beneficiados pelo projeto Keren Chai. A cada mês, aguardamos ansiosos pelo momento de usar o cartão e fazer nossas compras. Os descontos são essenciais para nossa família com renda limitada, permitindo-nos manter aluguel, escola e outras contas em dia. Além dos alimentos, as parcerias do projeto, como o desconto na Peraltas, são extremamente úteis, especialmente para sapatos de crianças, que desgastam rapidamente. Desejo sucesso, saúde e muitas bênçãos aos idealizadores, patrocinadores e voluntários.",
+      highlight: "Apoio mensal essencial há anos"
     },
     {
-      name: "Gabriel Senderowicz Moita",
-      content: "Com o Keren Chai, mantemos a casa kasher e já recebemos duas vezes um jantar de Shabat completo em casa. Projeto maravilhoso!",
-      highlight: "Casa kasher e jantares de Shabat"
+      name: "Gabriel Senderovicz Moita",
+      content: "Sou assistido pelo Keren Chai desde 2020 e tenho recebido um acolhimento excepcional. Graças ao projeto, consigo manter minha casa kasher e desfrutar de benefícios como descontos em lojas. Comprei sapatos para Rosh Hashaná e, duas vezes, minha família e eu fomos escolhidos para receber um jantar completo de Shabat em casa, o que foi maravilhoso! Parabéns a todos do Projeto Keren Chai!",
+      highlight: "Assistido desde 2020 com casa kasher"
     }
   ];
 
