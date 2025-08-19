@@ -65,16 +65,14 @@ const SobreProjeto = () => {
             Apoio prático e dignificante para quem se esforça para manter a tradição judaica viva
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="donate" className="text-lg px-8 py-4">
-              <Link to="/doe-agora">
+            <Link to="/doe-agora">
+              <Button size="lg" variant="donate" className="text-lg px-8 py-4">
                 Doe Agora
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
-              <Link to="/sobre-o-projeto">
-                Saber Mais
-              </Link>
-            </Button>
+              </Button>
+            </Link>
+            <Link to="/sobre-o-projeto">
+              
+            </Link>
           </div>
         </div>
       </section>
@@ -215,16 +213,16 @@ const SobreProjeto = () => {
               utilizada de forma responsável e transparente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="donate" className="text-lg px-8 py-4">
-                <Link to="/doe-agora">
+              <Link to="/doe-agora">
+                <Button size="lg" variant="donate" className="text-lg px-8 py-4">
                   Fazer Doação
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
-                <Link to="/sobre-o-projeto">
+                </Button>
+              </Link>
+              <Link to="/sobre-o-projeto">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-4">
                   Saber Mais
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
