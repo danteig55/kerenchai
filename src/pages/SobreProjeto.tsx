@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Search, Shield, FileCheck, Gift, CreditCard, Percent, Calendar, Heart, ChefHat, Shirt, BookOpen, Stethoscope, Sparkles, Utensils, Plane, Leaf } from "lucide-react";
+import { Users, Search, Shield, FileCheck, Gift, Calendar, Heart, ChefHat, Shirt, BookOpen, Stethoscope, Sparkles, Utensils, Plane, Leaf } from "lucide-react";
 const SobreProjeto = () => {
   const projectBenefits = [
     {
@@ -72,23 +72,6 @@ const SobreProjeto = () => {
     title: "Concessão",
     description: "Liberamos os benefícios via parceiros, cartão e ações sazonais"
   }];
-  const benefits = [{
-    icon: CreditCard,
-    title: "Descontos em estabelecimentos Kasher",
-    description: "Descontos em carnes, pães, laticínios e itens essenciais em 10+ parceiros kasher selecionados."
-  }, {
-    icon: Percent,
-    title: "Descontos contínuos",
-    description: "Roupas, sapatos, óculos e tratamento odontológico com condições especiais ao longo do ano."
-  }, {
-    icon: Calendar,
-    title: "Apoio nas festas judaicas",
-    description: "Arbaat Haminim em Sucot e descontos antes de Pessach e Rosh Hashaná."
-  }, {
-    icon: Gift,
-    title: "Refeições de Shabat",
-    description: "Sorteios e ações pontuais com refeições completas entregues em casa."
-  }];
   const stats = [{
     icon: Users,
     number: "250+",
@@ -141,31 +124,6 @@ const SobreProjeto = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Quem apoiamos</h3>
-              <p className="text-lg text-muted-foreground mb-6">Famílias — inclusive Avrechim e Baalê Batim — que conciliam estudo, trabalho e vida familiar, mantendo prática judaica e valores éticos.</p>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="text-accent mt-1" size={20} />
-                  <p className="text-muted-foreground">Famílias que dedicam tempo ao estudo da Torá</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="text-accent mt-1" size={20} />
-                  <p className="text-muted-foreground">Membros ativos da comunidade judaica</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="text-accent mt-1" size={20} />
-                  <p className="text-muted-foreground">Famílias que mantêm práticas kasher</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="text-accent mt-1" size={20} />
-                  <p className="text-muted-foreground">Trabalhadores que enfrentam dificuldades financeiras</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
         </div>
       </section>
 
@@ -253,61 +211,6 @@ const SobreProjeto = () => {
               <p className="text-2xl lg:text-3xl font-bold text-foreground leading-relaxed">
                 "Unindo a comunidade com benefícios que apoiam o dia a dia e fortalecem o estudo da Torá"
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Seção 3 - Benefícios de Apoiar */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Por que apoiar o Keren Chai</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Seu apoio gera impacto real e fortalece toda a comunidade judaica
-            </p>
-            <div className="bg-card rounded-2xl p-6 subtle-shadow inline-block">
-              <p className="text-lg font-semibold text-accent">
-                Transparência, dignidade e foco em quem precisa da nossa ajuda.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {benefits.map((benefit, index) => {
-            const IconComponent = benefit.icon;
-            return <div key={index} className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center flex-shrink-0">
-                      <IconComponent className="text-primary-foreground" size={24} />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-foreground mb-4">{benefit.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-                    </div>
-                  </div>
-                </div>;
-          })}
-          </div>
-
-          <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Transparência e Responsabilidade</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Trabalhamos com controle rigoroso, validação de critérios e revisão periódica das parcerias. 
-              Mantemos comunicação ativa com doadores e parceiros, garantindo que cada contribuição seja 
-              utilizada de forma responsável e transparente.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/doe-agora">
-                <Button size="lg" variant="donate" className="text-lg px-8 py-4">
-                  Fazer Doação
-                </Button>
-              </Link>
-              <Link to="/sobre-o-projeto">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                  Saber Mais
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
