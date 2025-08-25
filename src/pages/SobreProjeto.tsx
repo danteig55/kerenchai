@@ -1,8 +1,56 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Search, Shield, FileCheck, Gift, CreditCard, Percent, Calendar, Heart } from "lucide-react";
+import { CheckCircle, Users, Search, Shield, FileCheck, Gift, CreditCard, Percent, Calendar, Heart, ChefHat, Shirt, BookOpen, Stethoscope, Sparkles, Utensils, Plane, Leaf } from "lucide-react";
 const SobreProjeto = () => {
+  const projectBenefits = [
+    {
+      icon: ChefHat,
+      title: "Alimentação Kasher",
+      description: "Acesso a alimentos certificados com descontos especiais"
+    },
+    {
+      icon: Shirt,
+      title: "Roupas e Vestimentas",
+      description: "Masculinas, femininas e infantis com preços acessíveis"
+    },
+    {
+      icon: BookOpen,
+      title: "Itens Religiosos",
+      description: "Tefilin, Mezuza, Tzitzit e outros objetos sagrados"
+    },
+    {
+      icon: Stethoscope,
+      title: "Saúde Completa",
+      description: "Odontologia, nutricionista, psicólogo e aparelhos auditivos"
+    },
+    {
+      icon: Calendar,
+      title: "Carnes e Roupas nos Chaguim",
+      description: "Apoio especial durante as festas judaicas"
+    },
+    {
+      icon: Sparkles,
+      title: "Joias Exclusivas nos Chaguim",
+      description: "Presentes especiais para celebrar as tradições"
+    },
+    {
+      icon: Utensils,
+      title: "Refeições Especiais no Shabat",
+      description: "Jantares completos entregues em casa"
+    },
+    {
+      icon: Plane,
+      title: "Férias em Família",
+      description: "Momentos de descanso e união familiar"
+    },
+    {
+      icon: Leaf,
+      title: "Arbaat Haminim em Sucot",
+      description: "As quatro espécies para celebrar a festa"
+    }
+  ];
+
   const steps = [{
     icon: Users,
     title: "Indicação",
@@ -169,6 +217,43 @@ const SobreProjeto = () => {
                   <p className="text-sm text-primary-foreground/70">{step.description}</p>
                 </div>;
           })}
+          </div>
+        </div>
+      </section>
+
+      {/* Seção dos Benefícios do Projeto - Arte Visual */}
+      <section className="py-20 bg-secondary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
+              Benefícios do Projeto Keren Chai
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Apoio completo para fortalecer a vida judaica das famílias
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {projectBenefits.map((benefit, index) => {
+              const IconComponent = benefit.icon;
+              return (
+                <div key={index} className="bg-card rounded-2xl p-6 subtle-shadow hover:warm-shadow transition-smooth text-center group">
+                  <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                    <IconComponent className="text-primary-foreground" size={28} />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{benefit.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="text-center">
+            <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow inline-block max-w-4xl">
+              <p className="text-2xl lg:text-3xl font-bold text-foreground leading-relaxed">
+                "Unindo a comunidade com benefícios que apoiam o dia a dia e fortalecem o estudo da Torá"
+              </p>
+            </div>
           </div>
         </div>
       </section>
