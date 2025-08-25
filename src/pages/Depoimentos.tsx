@@ -1,29 +1,30 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Quote, Heart } from "lucide-react";
+import { Heart, ArrowRight } from "lucide-react";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 const Depoimentos = () => {
   const testimonials = [
     {
       name: "Família Posva",
       content: "Agradecemos imensamente pelo maravilhoso trabalho no projeto. Seu apoio é essencial para nossa família, oferecendo descontos em produtos kosher e possibilitando uma alimentação que, sem sua ajuda, não seria viável. Além dos descontos, fomos contemplados com uma deliciosa refeição de Shabat entregue em casa e um vale compras para um forno de leite. Obrigado e parabéns!",
-      highlight: "Descontos kosher e refeições de Shabat"
+      keyPhrase: "Descontos kosher e refeições de Shabat"
     },
     {
       name: "Maysa Vainer",
       content: "O Keren Chai tem sido uma grande ajuda em momentos difíceis. Durante a pandemia, recebemos o Emet, o que foi crucial naqueles tempos. BH o projeto seguiu com muitas brachot. Desde então, o projeto continuou a nos apoiar com dentista, sapatos e presentes durante as festas, além de muitas outras pequenas ajudas. Sou muito grata a todos que fazem parte do projeto. O Keren Chai também me faz sentir o verdadeiro Ahavat Israel.",
-      highlight: "Apoio completo e Ahavat Israel"
+      keyPhrase: "Apoio completo e Ahavat Israel"
     },
     {
       name: "Daniele Cordoba / Moriah Lyor",
       content: "Há anos, minha família e eu somos beneficiados pelo projeto Keren Chai. A cada mês, aguardamos ansiosos pelo momento de usar o cartão e fazer nossas compras. Os descontos são essenciais para nossa família com renda limitada, permitindo-nos manter aluguel, escola e outras contas em dia. Além dos alimentos, as parcerias do projeto, como o desconto na Peraltas, são extremamente úteis, especialmente para sapatos de crianças, que desgastam rapidamente. Desejo sucesso, saúde e muitas bênçãos aos idealizadores, patrocinadores e voluntários.",
-      highlight: "Apoio mensal essencial há anos"
+      keyPhrase: "Apoio mensal essencial há anos"
     },
     {
       name: "Gabriel Senderovicz Moita",
       content: "Sou assistido pelo Keren Chai desde 2020 e tenho recebido um acolhimento excepcional. Graças ao projeto, consigo manter minha casa kasher e desfrutar de benefícios como descontos em lojas. Comprei sapatos para Rosh Hashaná e, duas vezes, minha família e eu fomos escolhidos para receber um jantar completo de Shabat em casa, o que foi maravilhoso! Parabéns a todos do Projeto Keren Chai!",
-      highlight: "Assistido desde 2020 com casa kasher"
+      keyPhrase: "Assistido desde 2020 com casa kasher"
     }
   ];
 
@@ -43,27 +44,10 @@ const Depoimentos = () => {
         </div>
       </section>
 
-      {/* Written Testimonials */}
+      {/* Testimonials Carousel */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
-                <div className="flex items-start mb-6">
-                  <div className="w-12 h-12 hero-gradient rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                    <Quote className="text-primary-foreground" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">{testimonial.name}</h3>
-                    <span className="text-sm text-accent font-medium">{testimonial.highlight}</span>
-                  </div>
-                </div>
-                <blockquote className="text-muted-foreground leading-relaxed italic">
-                  "{testimonial.content}"
-                </blockquote>
-              </div>
-            ))}
-          </div>
+          <TestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
 

@@ -16,27 +16,27 @@ const SobreProjeto = () => {
     },
     {
       icon: BookOpen,
-      title: "Itens Religiosos",
-      description: "Tefilin, Mezuza, Tzitzit e outros objetos sagrados"
+      title: "Itens Religiosos (Tefilin, Mezuza, Tzitzit)",
+      description: "Acesso a objetos sagrados essenciais para a prática judaica"
     },
     {
       icon: Stethoscope,
-      title: "Saúde Completa",
+      title: "Saúde e Bem-Estar",
       description: "Odontologia, nutricionista, psicólogo e aparelhos auditivos"
     },
     {
       icon: Calendar,
-      title: "Carnes e Roupas nos Chaguim",
+      title: "Apoio nos Chaguim (carnes e roupas)",
       description: "Apoio especial durante as festas judaicas"
     },
     {
       icon: Sparkles,
-      title: "Joias Exclusivas nos Chaguim",
+      title: "Joias nos Chaguim",
       description: "Presentes especiais para celebrar as tradições"
     },
     {
       icon: Utensils,
-      title: "Refeições Especiais no Shabat",
+      title: "Refeições de Shabat",
       description: "Jantares completos entregues em casa"
     },
     {
@@ -46,7 +46,7 @@ const SobreProjeto = () => {
     },
     {
       icon: Leaf,
-      title: "Arbaat Haminim em Sucot",
+      title: "Arbaat Haminim (Sucot)",
       description: "As quatro espécies para celebrar a festa"
     }
   ];
@@ -90,70 +90,23 @@ const SobreProjeto = () => {
       <section className="py-20 bg-secondary/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-            Fortalecemos famílias judaicas no Brasil
+            Sobre o Projeto Keren Chai
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Apoio prático e dignificante para quem se esforça para manter a tradição judaica viva
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/doe-agora">
-              <Button size="lg" variant="donate" className="text-lg px-8 py-4">
-                Doe Agora
-              </Button>
-            </Link>
-            <Link to="/sobre-o-projeto">
-              
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Seção 1 - Apresentação do Projeto */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-8">O que é o Keren Chai</h2>
+          <div className="max-w-4xl mx-auto">
             <div className="bg-card rounded-2xl p-8 lg:p-12 subtle-shadow">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                O Keren Chai existe para <strong className="text-foreground">dar força a quem se esforça para viver com dignidade judaica</strong>. 
-                Apoiamos famílias judaicas que enfrentam pressões financeiras oferecendo descontos em alimentação kasher e 
-                diversos benefícios que garantem acesso a necessidades do dia a dia com valores acessíveis. Nossa missão vai além 
-                do apoio financeiro: promovemos dignidade, autonomia e fortalecem o pertencimento comunitário, permitindo que 
-                famílias mantenham suas tradições sem comprometer suas necessidades básicas.
+                O Keren Chai apoia famílias judaicas com benefícios práticos e dignos: alimentação kasher, itens para os chaguim, saúde e bem-estar — fortalecendo quem se esforça para viver a tradição no dia a dia.
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* Seção 2 - Impacto e Resultados */}
+      {/* Como Funcionamos */}
       <section className="py-20 hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">
-              Nosso impacto na comunidade
-            </h2>
-            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Números que refletem nosso compromisso com a comunidade judaica brasileira
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {stats.map((stat, index) => {
-            const IconComponent = stat.icon;
-            return <div key={index} className="text-center">
-                  <div className="w-20 h-20 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="text-foreground" size={40} />
-                  </div>
-                  <h3 className="text-5xl font-bold text-primary-foreground mb-2">{stat.number}</h3>
-                  <p className="text-xl text-primary-foreground">{stat.label}</p>
-                </div>;
-          })}
-          </div>
-
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-primary-foreground mb-6">Como funcionamos</h3>
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">Como funcionamos</h2>
             <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto mb-12">
               Processo transparente, criterioso e focado em oferecer apoio digno e efetivo
             </p>

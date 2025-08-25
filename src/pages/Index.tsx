@@ -14,10 +14,9 @@ const Index = () => {
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
                 Dar força para quem se esforça
               </h1>
-              <p className="text-xl text-muted-foreground mb-6">
-                Apoio a famílias que mantêm a chama do judaísmo acesa — mesmo diante do alto custo de vida.
+              <p className="text-xl text-muted-foreground mb-8">
+                Apoio direto a famílias judaicas que mantêm a chama do judaísmo acesa — com dignidade e propósito.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">O Keren Chai ajuda famílias judaicas que estudam, trabalham e constroem nossa comunidade a viver com dignidade: alimentação kasher, itens para os chaguim, saúde, bem estar e mais.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/doe-agora">
                   <Button variant="donate" size="lg" className="w-full sm:w-auto">
@@ -25,16 +24,10 @@ const Index = () => {
                     <Heart size={20} />
                   </Button>
                 </Link>
-                <Link to="/sobre-o-projeto">
-                  <Button variant="warm" size="lg" className="w-full sm:w-auto">
-                    Conheça o projeto
-                    <ArrowRight size={20} />
-                  </Button>
-                </Link>
               </div>
             </div>
             <div className="animate-slide-up lg:order-first">
-              <img src={heroImage} alt="Família judaica reunida ao redor da mesa de Shabat com velas acesas, chalá e vinho, representando tradição, união e dignidade familiar" className="rounded-2xl subtle-shadow w-full h-auto" />
+              <img src={heroImage} alt="Família judaica celebrando Shabat com dignidade - mesa preparada com chalá, velas e tradições que o Keren Chai ajuda a manter" className="rounded-2xl subtle-shadow w-full h-auto" />
             </div>
           </div>
         </div>
@@ -73,53 +66,53 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Benefits Teaser */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Nossos valores
+            Como apoiamos as famílias
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Orientamos nosso trabalho pelos princípios fundamentais que sustentam nossa comunidade
+            Benefícios práticos que fazem a diferença no dia a dia
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Respeito</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Heart className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Alimentação Kasher</h3>
               <p className="text-muted-foreground">
-                Tratamos cada família com dignidade, preservando sua autonomia e privacidade
+                Descontos especiais em alimentos certificados para toda a família
               </p>
             </div>
-            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Dignidade</h3>
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Shield className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Saúde e Bem-Estar</h3>
               <p className="text-muted-foreground">
-                Oferecemos apoio que fortalece, sem criar dependência, promovendo o crescimento
+                Apoio em odontologia, nutrição, psicologia e aparelhos auditivos
               </p>
             </div>
-            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Comunidade</h3>
-              <p className="text-muted-foreground">Fortalecemos os laços que nos unem, cuidando de quem merece.</p>
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Users className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Apoio nos Chaguim</h3>
+              <p className="text-muted-foreground">
+                Carnes, roupas e itens especiais para celebrar as festas judaicas
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">
-            Junte-se a nós nesta missão
-          </h2>
-          <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Sua contribuição faz a diferença na vida de famílias que dedicam suas vidas aos valores judaicos
-          </p>
-          <Link to="/doe-agora">
-            <Button variant="warm" size="lg" className="warm-shadow">
-              Fazer uma doação
-              <Heart size={20} />
+          <Link to="/sobre-o-projeto">
+            <Button variant="warm" size="lg" className="group">
+              Ver todos os benefícios
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-smooth" />
             </Button>
           </Link>
         </div>
       </section>
+
     </Layout>;
 };
 export default Index;

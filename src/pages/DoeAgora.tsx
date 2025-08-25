@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Heart, CreditCard, QrCode, Copy, CheckCircle, MessageCircle } from "lucide-react";
+import { Heart, CreditCard, QrCode, Copy, CheckCircle, MessageCircle, Shield, Users, FileText } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const DoeAgora = () => {
@@ -126,56 +126,74 @@ const DoeAgora = () => {
             </div>
 
             {/* Payment Options */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* PIX */}
-              <div className="text-center">
-                <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <QrCode className="text-primary-foreground" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">PIX</h3>
-                
-                {/* QR Code Placeholder */}
-                <div className="bg-muted rounded-lg p-6 mb-4">
-                  <div className="w-32 h-32 bg-border rounded-lg mx-auto flex items-center justify-center">
-                    <QrCode className="text-muted-foreground" size={48} />
+            <div className="space-y-6">
+              {/* PIX Payment */}
+              <div className="bg-card rounded-2xl p-6 subtle-shadow">
+                <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
+                  <div className="w-8 h-8 hero-gradient rounded-lg flex items-center justify-center mr-3">
+                    <QrCode className="text-primary-foreground" size={16} />
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">QR Code PIX</p>
-                </div>
-
-                <div className="bg-secondary/50 rounded-lg p-4 mb-4">
-                  <p className="text-sm text-muted-foreground mb-2">Chave PIX:</p>
-                  <div className="flex items-center justify-between bg-background rounded p-2">
-                    <span className="text-sm font-mono text-foreground truncate">{pixKey}</span>
-                    <Button
+                  Pagamento via PIX
+                </h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-secondary/30 rounded-xl p-4 text-center">
+                    <p className="text-sm text-muted-foreground mb-3">QR Code</p>
+                    <div className="w-32 h-32 bg-muted rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <QrCode className="text-muted-foreground" size={48} />
+                    </div>
+                    <p className="text-xs text-muted-foreground">Escaneie com seu app do banco</p>
+                  </div>
+                  
+                  <div className="bg-secondary/30 rounded-xl p-4">
+                    <p className="text-sm text-muted-foreground mb-3">Chave PIX</p>
+                    <div className="bg-muted rounded-lg p-3 mb-3">
+                      <p className="font-mono text-sm break-all">{pixKey}</p>
+                    </div>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
                       onClick={copyPixKey}
-                      variant="ghost"
-                      size="icon"
-                      className="ml-2"
+                      className="w-full"
                     >
-                      <Copy size={16} className="text-accent" />
+                      <Copy size={16} className="mr-2" />
+                      Copiar chave PIX
                     </Button>
                   </div>
                 </div>
               </div>
 
-              {/* Cartão de Crédito */}
-              <div className="text-center">
-                <div className="w-16 h-16 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <CreditCard className="text-foreground" size={32} />
+              {/* Credit Card Payment */}
+              <div className="bg-card rounded-2xl p-6 subtle-shadow">
+                <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
+                  <div className="w-8 h-8 hero-gradient rounded-lg flex items-center justify-center mr-3">
+                    <CreditCard className="text-primary-foreground" size={16} />
+                  </div>
+                  Pagamento com Cartão
+                </h3>
+                
+                <div className="text-center">
+                  <p className="text-muted-foreground mb-4">
+                    Pagamento seguro com cartão de crédito ou débito
+                  </p>
+                  <Button 
+                    variant="donate" 
+                    size="lg" 
+                    onClick={handleCardPayment}
+                    className="w-full sm:w-auto"
+                    disabled={getCurrentAmount() === 0}
+                  >
+                    <CreditCard size={20} className="mr-2" />
+                    Doar com cartão - R$ {getCurrentAmount()}
+                  </Button>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Cartão de Crédito</h3>
-                <p className="text-muted-foreground mb-6">
-                  Pagamento seguro com cartão de crédito ou débito
+              </div>
+
+              {/* Payment Security Info */}
+              <div className="bg-secondary/20 rounded-2xl p-4 text-center">
+                <p className="text-sm text-muted-foreground">
+                  Pagamentos processados por <strong>processador seguro</strong>. Você receberá um recibo por e-mail.
                 </p>
-                <Button 
-                  onClick={handleCardPayment}
-                  variant="donate" 
-                  size="lg" 
-                  className="w-full"
-                  disabled={getCurrentAmount() === 0}
-                >
-                  Doar com cartão
-                </Button>
               </div>
             </div>
           </div>
@@ -249,26 +267,41 @@ const DoeAgora = () => {
       {/* Transparência */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-card rounded-2xl p-8 subtle-shadow">
-            <div className="w-16 h-16 warm-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="text-foreground" size={32} />
-            </div>
-            <h2 className="text-2xl font-bold text-foreground mb-4">Transparência</h2>
+          <div className="bg-secondary/20 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Transparência Total</h3>
             <p className="text-muted-foreground mb-6">
-              Validação de critérios, registro das entregas e revisão periódica de parceiros. 
-              Relatórios sob demanda para doadores que desejam acompanhar o impacto de suas contribuições.
+              Prestamos contas de cada real doado. Nossos relatórios são públicos e auditados.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm">
-                Auditoria regular
-              </span>
-              <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm">
-                Relatórios de impacto
-              </span>
-              <span className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm">
-                Prestação de contas
-              </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <Shield className="text-primary-foreground" size={24} />
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Auditoria</h4>
+                <p className="text-sm text-muted-foreground">Contas auditadas por empresa independente</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <Users className="text-primary-foreground" size={24} />
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Impacto</h4>
+                <p className="text-sm text-muted-foreground">Relatórios mensais de famílias apoiadas</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <FileText className="text-primary-foreground" size={24} />
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Prestação</h4>
+                <p className="text-sm text-muted-foreground">Documentos públicos disponíveis</p>
+              </div>
             </div>
+          </div>
+
+          {/* CNPJ Footer */}
+          <div className="text-center mt-8">
+            <p className="text-sm text-muted-foreground">
+              <strong>Keren Chai</strong> • CNPJ: 00.000.000/0000-00
+            </p>
           </div>
         </div>
       </section>
