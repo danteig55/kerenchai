@@ -14,9 +14,7 @@ const Index = () => {
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
                 Dar força para quem se esforça
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
-                Apoio direto a famílias judaicas que mantêm a chama do judaísmo acesa — com dignidade e propósito.
-              </p>
+              <p className="text-xl text-muted-foreground mb-8">Apoio direto a famílias judaicas que mantêm a chama do judaísmo acesa com dignidade e propósito.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/doe-agora">
                   <Button variant="donate" size="lg" className="w-full sm:w-auto">
