@@ -12,7 +12,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-                Dar força para quem se esforça
+                Doe um pouco e ajude muito
               </h1>
               <p className="text-xl text-muted-foreground mb-8">Apoio direto a famílias judaicas que mantêm a chama do judaísmo acesa com dignidade e propósito.</p>
               <div className="flex flex-col sm:flex-row gap-4">
