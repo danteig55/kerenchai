@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-family-shabbat.jpg";
-import foodIcon from "@/assets/food-icon.png";
+import foodOutlineIcon from "@/assets/food-outline-icon.png";
 const Index = () => {
   return <Layout>
       {/* Hero Section */}
@@ -77,7 +77,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
-                <img src={foodIcon} alt="Food icon" className="w-7 h-7" />
+                <img src={foodOutlineIcon} alt="Food outline icon" className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Alimentação Kasher</h3>
               <p className="text-muted-foreground">Descontos especiais nas compras nos estabelecimentos Kasher.</p>
