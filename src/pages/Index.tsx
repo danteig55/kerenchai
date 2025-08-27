@@ -86,7 +86,7 @@ const Index = () => {
                 <Shield className="text-primary-foreground" size={28} />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Saúde, bem-estar e necessidades do dia a dia.</h3>
-              <p className="text-muted-foreground">Apoio em tratamentos odontológicos, nutricionista, psicologia, aparelhos auditivos, roupas para crianças, camisas sociais, sapatos</p>
+              <p className="text-muted-foreground">Apoio em tratamentos odontológicos, nutricionista, psicologia, aparelhos auditivos, roupas para crianças, camisas sociais, sapatos, locação de casa para férias escolares e muito mais</p>
             </div>
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
