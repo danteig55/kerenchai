@@ -14,7 +14,7 @@ const Index = () => {
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
                 Doe um pouco e ajude muito
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">Apoio direto a famílias judaicas</p>
+              <p className="text-xl text-muted-foreground mb-8">Apoio direto a famílias judaicas, de forma digna, possibilitando o consumo kasher e oferecendo suporte em várias necessidades essências do dia a dia.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/doe-agora">
                   <Button variant="donate" size="lg" className="w-full sm:w-auto">
@@ -79,34 +79,25 @@ const Index = () => {
                 <Heart className="text-primary-foreground" size={28} />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Alimentação Kasher</h3>
-              <p className="text-muted-foreground">
-                Descontos especiais em alimentos certificados para toda a família
-              </p>
+              <p className="text-muted-foreground">Descontos especiais nas compras nos estabelecimentos Kasher.</p>
             </div>
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
                 <Shield className="text-primary-foreground" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Saúde e Bem-Estar</h3>
-              <p className="text-muted-foreground">
-                Apoio em odontologia, nutrição, psicologia e aparelhos auditivos
-              </p>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Saúde, bem-estar e necessidades do dia a dia.</h3>
+              <p className="text-muted-foreground">Apoio em tratamentos odontológicos, nutricionista, psicologia, aparelhos auditivos, roupas para crianças, camisas sociais, sapatos</p>
             </div>
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
                 <Users className="text-primary-foreground" size={28} />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Apoio nos Chaguim</h3>
-              <p className="text-muted-foreground">
-                Carnes, roupas e itens especiais para celebrar as festas judaicas
-              </p>
+              <p className="text-muted-foreground">Carnes, roupas para chaguim, arbaat haminim, joias e itens especiais para celebrar as festas judaicas</p>
             </div>
           </div>
           <Link to="/sobre-o-projeto">
-            <Button variant="warm" size="lg" className="group">
-              Ver todos os benefícios
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-smooth" />
-            </Button>
+            
           </Link>
         </div>
       </section>
