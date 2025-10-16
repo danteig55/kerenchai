@@ -82,9 +82,7 @@ const DoeAgora = () => {
 
               {/* Payment Security Info */}
               <div className="bg-secondary/20 rounded-2xl p-4 text-center">
-                <p className="text-sm text-muted-foreground">
-                  Pagamentos processados por <strong>processador seguro</strong>. Você receberá um recibo por e-mail.
-                </p>
+                
               </div>
             </div>
           </div>
