@@ -121,7 +121,7 @@ const DoeAgora = () => {
           {/* CNPJ Footer */}
           <div className="text-center mt-8">
             <p className="text-sm text-muted-foreground">
-              <strong>Keren Chai</strong> • CNPJ: 00.000.000/0000-00
+              <strong>Keren Chai</strong> • CNPJ: 44.898.84/0001-24
             </p>
           </div>
         </div>
