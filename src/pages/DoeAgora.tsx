@@ -104,25 +104,15 @@ const DoeAgora = () => {
                   Pagamento via PIX
                 </h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-secondary/30 rounded-xl p-4 text-center">
-                    <p className="text-sm text-muted-foreground mb-3">QR Code</p>
-                    <div className="w-32 h-32 bg-muted rounded-lg flex items-center justify-center mx-auto mb-3">
-                      <QrCode className="text-muted-foreground" size={48} />
-                    </div>
-                    <p className="text-xs text-muted-foreground">Escaneie com seu app do banco</p>
+                <div className="bg-secondary/30 rounded-xl p-4">
+                  <p className="text-sm text-muted-foreground mb-3">Chave PIX</p>
+                  <div className="bg-muted rounded-lg p-3 mb-3">
+                    <p className="font-mono text-sm break-all">{pixKey}</p>
                   </div>
-                  
-                  <div className="bg-secondary/30 rounded-xl p-4">
-                    <p className="text-sm text-muted-foreground mb-3">Chave PIX</p>
-                    <div className="bg-muted rounded-lg p-3 mb-3">
-                      <p className="font-mono text-sm break-all">{pixKey}</p>
-                    </div>
-                    <Button variant="outline" size="sm" onClick={copyPixKey} className="w-full">
-                      <Copy size={16} className="mr-2" />
-                      Copiar chave PIX
-                    </Button>
-                  </div>
+                  <Button variant="outline" size="sm" onClick={copyPixKey} className="w-full">
+                    <Copy size={16} className="mr-2" />
+                    Copiar chave PIX
+                  </Button>
                 </div>
               </div>
 
@@ -137,11 +127,13 @@ const DoeAgora = () => {
                 
                 <div className="text-center">
                   <p className="text-muted-foreground mb-4">
-                    Pagamento seguro com cartão de crédito ou débito
+                    Para realizar pagamento via cartão de crédito, entre em contato conosco
                   </p>
-                  <Button variant="donate" size="lg" onClick={handleCardPayment} className="w-full sm:w-auto" disabled={getCurrentAmount() === 0}>
-                    <CreditCard size={20} className="mr-2" />
-                    Doar com cartão - R$ {getCurrentAmount()}
+                  <Button asChild variant="default" size="lg" className="bg-green-500 hover:bg-green-600 text-white border-0">
+                    <a href="https://wa.me/5511992540709" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                      <MessageCircle size={20} />
+                      Falar no WhatsApp
+                    </a>
                   </Button>
                 </div>
               </div>
