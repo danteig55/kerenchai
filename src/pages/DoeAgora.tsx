@@ -69,7 +69,7 @@ const DoeAgora = () => {
                 
                 <div className="text-center">
                   <p className="text-muted-foreground mb-4">
-                    para realizar pagamento via cartão de crédito, entre em contato conosco
+                    Para realizar pagamento via cartão de crédito, entre em contato conosco.
                   </p>
                   <Button asChild variant="default" size="lg" className="bg-green-500 hover:bg-green-600 text-white border-0">
                     <a href="https://wa.me/5511992540709" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
