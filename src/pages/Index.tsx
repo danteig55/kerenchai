@@ -42,6 +42,39 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Métricas/Impacto Section */}
+      <section className="py-16 bg-secondary/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div className="text-center animate-fade-in">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Users className="text-primary-foreground" size={32} />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-2">1000+</h3>
+              <p className="text-muted-foreground">Pessoas impactadas</p>
+            </div>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.1s"
+          }}>
+              <div className="w-16 h-16 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="text-foreground" size={32} />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
+              <p className="text-muted-foreground">Parceiros ativos</p>
+            </div>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.2s"
+          }}>
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Heart className="text-primary-foreground" size={32} />
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-2">365</h3>
+              <p className="text-muted-foreground">Dias de apoio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefícios Section */}
       <section id="beneficios" className="py-20 bg-secondary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,43 +180,6 @@ const Index = () => {
                 Nosso objetivo é dar dignidade às famílias judaicas, com apoio prático e direto em todas as áreas essenciais.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Métricas/Impacto Section */}
-      <section className="py-16 bg-secondary/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Users className="text-primary-foreground" size={32} />
-              </div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">1000+</h3>
-              <p className="text-muted-foreground">Pessoas impactadas</p>
-            </div>
-            <div className="text-center animate-fade-in" style={{
-            animationDelay: "0.1s"
-          }}>
-              <div className="w-16 h-16 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="text-foreground" size={32} />
-              </div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
-              <p className="text-muted-foreground">Parceiros ativos</p>
-            </div>
-            <div className="text-center animate-fade-in" style={{
-            animationDelay: "0.2s"
-          }}>
-              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Heart className="text-primary-foreground" size={32} />
-              </div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">365</h3>
-              <p className="text-muted-foreground">Dias de apoio</p>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            
           </div>
         </div>
       </section>
