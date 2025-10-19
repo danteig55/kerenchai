@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Heart, Users, Shield, ChefHat, Stethoscope, Calendar, Glasses } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-family-shabbat.jpg";
-
 const Index = () => {
   const scrollToBenefits = () => {
     const element = document.getElementById('beneficios');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
   return <Layout>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -30,22 +30,13 @@ const Index = () => {
                     <Heart size={20} />
                   </Button>
                 </Link>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="w-full sm:w-auto"
-                  onClick={scrollToBenefits}
-                >
+                <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={scrollToBenefits}>
                   Saiba mais
                 </Button>
               </div>
             </div>
             <div className="animate-slide-up lg:order-first">
-              <img 
-                src={heroImage} 
-                alt="Família judaica celebrando Shabat com dignidade - mesa preparada com chalá, velas e tradições que o Keren Chai ajuda a manter" 
-                className="rounded-2xl subtle-shadow w-full h-auto" 
-              />
+              <img src={heroImage} alt="Família judaica celebrando Shabat com dignidade - mesa preparada com chalá, velas e tradições que o Keren Chai ajuda a manter" className="rounded-2xl subtle-shadow w-full h-auto" />
             </div>
           </div>
         </div>
@@ -123,14 +114,18 @@ const Index = () => {
               <h3 className="text-3xl font-bold text-foreground mb-2">1000+</h3>
               <p className="text-muted-foreground">Pessoas impactadas</p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.1s"
+          }}>
               <div className="w-16 h-16 warm-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="text-foreground" size={32} />
               </div>
               <h3 className="text-3xl font-bold text-foreground mb-2">10+</h3>
               <p className="text-muted-foreground">Parceiros ativos</p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="text-center animate-fade-in" style={{
+            animationDelay: "0.2s"
+          }}>
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Heart className="text-primary-foreground" size={32} />
               </div>
@@ -140,11 +135,7 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <div className="bg-card rounded-xl p-6 subtle-shadow inline-block max-w-2xl">
-              <p className="text-sm text-muted-foreground">
-                <strong>Nota:</strong> Famílias do Emet podem acessar os benefícios (exceto alimentação).
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -165,5 +156,4 @@ const Index = () => {
       </section>
     </Layout>;
 };
-
 export default Index;
