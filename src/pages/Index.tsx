@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Shield, ChefHat, Stethoscope, Calendar, Glasses } from "lucide-react";
+import { Heart, Users, Shield, ChefHat, Stethoscope, Calendar, Glasses, Shirt, Book, Gem, Utensils, Plane, Leaf } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-family-shabbat.jpg";
 const Index = () => {
@@ -54,7 +54,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
                 <ChefHat className="text-primary-foreground" size={28} />
@@ -65,18 +65,66 @@ const Index = () => {
 
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Shirt className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Roupas e Vestimentas</h3>
+              <p className="text-muted-foreground">Apoio para vestuário e roupas de festa</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Book className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Itens Religiosos</h3>
+              <p className="text-muted-foreground">Tefilin, Mezuza, Tzitzit e outros itens sagrados</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
                 <Stethoscope className="text-primary-foreground" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Saúde e bem-estar</h3>
-              <p className="text-muted-foreground">Odontologia, psicologia, nutrição, aparelhos auditivos e mais</p>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Saúde e Bem-Estar</h3>
+              <p className="text-muted-foreground">Odontologia, psicologia, nutrição e aparelhos auditivos</p>
             </div>
 
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
                 <Calendar className="text-primary-foreground" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Chaguim e tradição</h3>
-              <p className="text-muted-foreground">Roupas, arbaat haminim, joias e itens para festas</p>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Apoio nos Chaguim</h3>
+              <p className="text-muted-foreground">Carnes e roupas para as festas judaicas</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Gem className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Joias nos Chaguim</h3>
+              <p className="text-muted-foreground">Apoio para joias nas festas judaicas</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Utensils className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Refeições de Shabat</h3>
+              <p className="text-muted-foreground">Apoio para manter as refeições de Shabat</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Plane className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Férias em Família</h3>
+              <p className="text-muted-foreground">Apoio para férias e momentos em família</p>
+            </div>
+
+            <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
+              <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
+                <Leaf className="text-primary-foreground" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Arbaat Haminim</h3>
+              <p className="text-muted-foreground">As quatro espécies para Sucot</p>
             </div>
 
             <div className="bg-card rounded-2xl p-8 subtle-shadow hover:warm-shadow transition-smooth group text-center">
