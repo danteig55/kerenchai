@@ -50,7 +50,7 @@ const Index = () => {
               <div className="w-16 h-16 hero-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Users className="text-primary-foreground" size={32} />
               </div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">1000+</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-2">2000+</h3>
               <p className="text-muted-foreground">Pessoas impactadas</p>
             </div>
             <div className="text-center animate-fade-in" style={{
